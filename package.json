@@ -10,9 +10,6 @@
   "description": "guitar-tab-generator ----------------",
   "author": "Cole Willsea <coleww@gmail.com> (http://colewillsea.com/)",
   "devDependencies": {
-    "install": "^0.8.1",
-    "npm": "^3.10.8",
-    "standard": "^8.4.0",
     "tap": "^7.1.2"
   }
 }

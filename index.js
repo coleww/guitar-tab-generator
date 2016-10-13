@@ -20,18 +20,18 @@ module.exports = function (tonic, scale, guitarTuning) {
 
   const renderedStrings = tuning.map((stringRoot) => {
     const stringRootIndex = notes.findIndex((note) => note === stringRoot);
-    var stringString = ''
+    var stringString = '';
     for (var i = 0; i < 13; i++) {
       var currentNoteIndex = stringRootIndex + i;
-      var currentNote = plentyOfNotes[currentNoteIndex]
+      var currentNote = plentyOfNotes[currentNoteIndex];
       if (notesInScale.find((note) => currentNote === note)) {
-        var separator = i < 10 ? '--' : '-'
-        stringString += (i + separator)
+        var separator = i < 10 ? '--' : '-';
+        stringString += (i + separator);
       } else {
-        stringString += '---'
+        stringString += '---';
       }
     }
     return `${stringRoot}|-${stringString}|`;
   })
-  return renderedStrings.slice().reverse().join('\n')
+  return renderedStrings.slice().reverse().join('\n');
 }
