@@ -1,6 +1,6 @@
 var tap = require('tap')
 
-var guitarTabGenerator = require('./')
+var guitarTabGenerator = require('./src')
 
 tap.test('renders a C major scale', function (t) {
   t.plan(1)
